@@ -66,4 +66,46 @@ static const uint8_t T12 = 12;
 static const uint8_t T13 = 13;
 static const uint8_t T14 = 14;
 
+/* ================= TFT / DISPLAY DEFINITIONS ================= */
+
+#define HAS_SCREEN 1
+#define USER_SETUP_LOADED 1
+
+// Display rotation (0–3), Waveshare default works with 1
+#define ROTATION 1
+
+// Minimum brightness (Bruce uses this)
+#define MINBRIGHT ((uint8_t)1)
+
+/* ---------------- ST7789 172x320 ---------------- */
+
+#define ST7789_DRIVER 1
+
+// NOTE: panel is 172x320, but many libs use 170x320
+#define TFT_WIDTH 172
+#define TFT_HEIGHT 320
+
+/* ---------------- Common TFT definitions ---------------- */
+
+#define TFT_BACKLIGHT_ON 1
+
+// Waveshare ESP-S3-LCD-1.47 pins
+#define TFT_BL   21
+#define TFT_RST  14
+#define TFT_DC   9
+#define TFT_CS   10
+#define TFT_MOSI 11
+#define TFT_SCLK 12
+#define TFT_MISO -1   // not used
+
+// Fonts & rendering
+#define SMOOTH_FONT 1
+
+// SPI speeds (safe for S3 + ST7789)
+#define SPI_FREQUENCY        40000000
+#define SPI_READ_FREQUENCY  20000000
+
+/* ============================================================ */
+
+
 #endif /* Pins_Arduino_h */
