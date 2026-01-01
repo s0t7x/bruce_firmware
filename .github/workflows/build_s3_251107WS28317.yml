@@ -1,5 +1,5 @@
 ---
-name: Build and Push Releases
+name: Build for Waveshare ESP-S3-LCD-1.47
 
 on:
   push:
