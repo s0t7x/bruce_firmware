@@ -11,11 +11,11 @@
 #define TFT_BL           21    // LED back-light control pin
 #define TFT_BACKLIGHT_ON HIGH  // Level to turn ON back-light (HIGH or LOW)
 
-#define TFT_MOSI 23
-#define TFT_SCLK 18
-#define TFT_CS   5   // Chip select control pin
-#define TFT_DC   22  // Data Command control pin
-#define TFT_RST  17  // Reset pin (could connect to RST pin)
+#define TFT_MOSI 11
+#define TFT_SCLK 12
+#define TFT_CS   10   // Chip select control pin
+#define TFT_DC   9  // Data Command control pin
+#define TFT_RST  14  // Reset pin (could connect to RST pin)
 
 #define LOAD_GLCD   // Font 1. Original Adafruit 8 pixel font needs ~1820 bytes in FLASH
 #define LOAD_FONT2  // Font 2. Small 16 pixel high font, needs ~3534 bytes in FLASH, 96 characters
