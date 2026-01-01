@@ -17,7 +17,6 @@ jobs:
       fail-fast: false
       matrix:
         board:
-          - { env: "esp32-s3-devkitc-1", family: "ESP32-S3" }
           - { env: "waveshare-esp32-s3-lcd-1-47", family: "ESP32-S3" }
          
     steps:
